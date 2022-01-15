@@ -5,6 +5,7 @@
 /* utilities  */
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 /* header part  */
@@ -120,4 +121,30 @@ margin-bottom:30px;
 .collection-items p{
     font-size: 14px;
     color: #787885;
+}
+
+/*----------------\*
+   ....footer....
+*\----------------*/
+footer{
+    background: #0A0826;
+    color:#fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    font-weight: light;
+    font-size: 14px;
+}
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media{
+    padding: 16px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
 }
