@@ -130,7 +130,7 @@ padding-bottom: 30px;
     color: #787885;
 }
 /* <!-- Influencer  --> */
-.top-ininfluencers h2{
+.top-influencers h2{
     text-align: center;
 }
 .influencers{
@@ -179,8 +179,10 @@ footer{
 ....Media Query....
 *\----------------*/
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* .......
+(phones )...............
+*/
+@media screen and (max-width: 600px){
     /* header part  */
     .nav-menu{
         display: none;
@@ -193,12 +195,65 @@ footer{
     }
 
     /* Banner part  */
-    
+    .banner{
+        display: block;
+    }
+     #banner-info{
+        order: 2;
+    }
+    #banner-pic{
+       order: 1;
+    }
+/* logos  */
+    .all-logos{
+    display: inline-block;
+}
+.logo{
+    padding: 10px;
+}
+/* Collection  */
+.collections{
+    display: block;
+}
+
 }
 
 
+/* ..........
+(Tablets ) 
+.........*/
+@media screen and (max-width: 768px){
+    /* header part  */
+    .nav-menu{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+    .menu span{
+        padding: 5%;
+    }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+    /* Banner part  */
+    .banner{
+        display: block;
+    }
+     #banner-info{
+        order: 2;
+    }
+    #banner-pic{
+       order: 1;
+    }
+/* logos  */
+    .all-logos{
+    display: inline-block;
+}
+    .logo{
+    padding: 10px;
+}
+/* Collection  */
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+}
+
+}
