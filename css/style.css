@@ -7,14 +7,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/*.................
- Header Section
- .............. */
-
-
 /* header part  */
-nav{
-    display: flex;
+nav{    
     justify-content: space-between;
     align-items: center;
 }
@@ -25,11 +19,15 @@ nav a{
     font-weight: 600px;
 }
 
-/* Banner Part  */
+/*.................
+ Main Section
+ .............. */
 
+/* ..........
+Banner Part 
+............ */
 .container{
-    display: flex;
-    
+    display: flex;    
 }
 .banner{
     justify-content: space-between;
@@ -59,7 +57,25 @@ nav a{
 .half-width img{
     padding-left: 25%;
 }
-/* Popular Collection  */
-.Collection h2{
+
+/* ..........
+Popular Collection 
+............. */
+.popular-collection h2{
 text-align: center;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+}
+.items-info{
+    display: flex;
+    align-items: center;
+}
+.ratings{
+    padding-right: 1%;
+}
+.collection-items p{
+    word-wrap: break-word;
 }
