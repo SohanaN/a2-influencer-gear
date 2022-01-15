@@ -19,7 +19,9 @@ nav a{
     padding-left: 20px;  
     font-weight: 600px;
 }
-
+.menu {
+    display: none;
+}
 /*.................
  Main Section
  .............. */
@@ -81,13 +83,17 @@ hr{
 .logo{
     padding-left: 60px;
 }
+
 /* ..........
 Popular Collection 
 ............. */
+.popular-collection{
+    margin-bottom: 50px;
+}
 .popular-collection h2{
 text-align: center;
 font-size: 28px;
-margin-bottom:50px;
+padding-bottom: 30px;
 }
 .collections{
     display: grid;
@@ -123,10 +129,29 @@ margin-bottom:50px;
     font-size: 14px;
     color: #787885;
 }
-
-/*----------------\*
-   ....footer....
-*\----------------*/
+/* <!-- Influencer  --> */
+.top-ininfluencers h2{
+    text-align: center;
+}
+.influencers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+.influencer img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding-left: 50px;
+}
+.influencer a{
+    text-decoration: none;
+    color: #E02C6D;
+}
+/*----------------
+footer
+----------------*/
 footer{
     background: #0A0826;
     color:#fff;
@@ -149,3 +174,31 @@ footer{
     font-size: 1em;
     cursor: pointer;
 }
+
+/*----------------\*
+....Media Query....
+*\----------------*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* header part  */
+    .nav-menu{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+    .menu span{
+        padding: 5%;
+    }
+
+    /* Banner part  */
+    
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
