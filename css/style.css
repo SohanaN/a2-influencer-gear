@@ -32,7 +32,7 @@ Banner Part
 }
 .banner{
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 .half-width{
     width: 50%;
@@ -67,7 +67,7 @@ Banner Part
 Logos
 -----------  */
 .logos{
-    margin: 60px auto;
+    margin: 80px 0;
 }
 hr{
     border: 0;
@@ -87,7 +87,7 @@ Popular Collection
 .popular-collection h2{
 text-align: center;
 font-size: 28px;
-margin-bottom:30px;
+margin-bottom:50px;
 }
 .collections{
     display: grid;
@@ -99,7 +99,8 @@ margin-bottom:30px;
 .collection-items{
     box-shadow: -2px -2px 20px 1px rgb(148 143 143 / 50%);
     padding: 15px;  
-    width: 329px;      
+    width: 329px;
+    height: 476px;      
     display: flex;
     justify-content: center;
 }
