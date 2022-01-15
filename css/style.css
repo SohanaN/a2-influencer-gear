@@ -63,19 +63,36 @@ Popular Collection
 ............. */
 .popular-collection h2{
 text-align: center;
+font-size: 28px;
+margin: 30px auto;
 }
 .collections{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
     row-gap: 30px;
+    justify-items: center;
+}
+.collection-items{
+    box-shadow: -2px -2px 28px 2px rgb(148 143 143 / 50%);
+    padding: 15px;    
+}
+collection-items .items-image img{
+    width: 300px;
+    height: 256px;
+}
+.items-details p{
+    font-weight: 700;
 }
 .items-info{
     display: flex;
     align-items: center;
 }
 .ratings{
+    color: orange;
     padding-right: 1%;
 }
 .collection-items p{
-    word-wrap: break-word;
+    font-size: 14px;
+    color: #787885;
 }
