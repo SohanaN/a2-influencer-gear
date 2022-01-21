@@ -9,6 +9,10 @@ body{
 }
 
 /* header part  */
+
+.container{
+    display: flex;    
+}
 nav{    
     justify-content: space-between;
     align-items: center;
@@ -29,10 +33,14 @@ nav a{
 /* ..........
 Banner Part 
 ............ */
-.container{
-    display: flex;    
+
+.banner{  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
 }
-.banner{
+.banner-item{
+    display: flex;
     justify-content: space-between;
     margin: 50px 0;
 }
@@ -87,8 +95,11 @@ hr{
 /* ..........
 Popular Collection 
 ............. */
+
 .popular-collection{
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 .popular-collection h2{
 text-align: center;
@@ -189,31 +200,54 @@ footer{
     }
     .menu{
         display: flex;
+        justify-content: center;
     }
     .menu span{
         padding: 5%;
+        font-size: 23px;
     }
 
     /* Banner part  */
     .banner{
         display: block;
     }
+    .half-width{
+        width: 100%;
+    }
+    .banner-title{
+text-align: center;
+margin-bottom: 50px;
+    }
      #banner-info{
+
         order: 2;
     }
     #banner-pic{
        order: 1;
     }
+    .banner-image img{
+        left: 0;
+    }
 /* logos  */
+.logos{
+    display: flex;
+}
     .all-logos{
     display: inline-block;
 }
-.logo{
+    .logo{
     padding: 10px;
 }
 /* Collection  */
-.collections{
-    display: block;
+    .collections{
+        display: inline-block;
+}
+.influencers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    flex-direction: column;
 }
 
 }
@@ -229,22 +263,38 @@ footer{
     }
     .menu{
         display: flex;
+        justify-content: center;
     }
     .menu span{
         padding: 5%;
+        font-size: 23px;
     }
 
     /* Banner part  */
     .banner{
         display: block;
     }
+    .half-width{
+        width: 100%;
+    }
+    .banner-title{
+        text-align: center;
+        margin-bottom: 50px;
+    }
      #banner-info{
+
         order: 2;
     }
     #banner-pic{
        order: 1;
     }
+    .banner-image img{
+        left: 0;
+    }
 /* logos  */
+.logos{
+    display: flex;
+}
     .all-logos{
     display: inline-block;
 }
@@ -254,6 +304,13 @@ footer{
 /* Collection  */
     .collections{
         grid-template-columns: repeat(2, 1fr);
+}
+.influencers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    flex-direction: column;
 }
 
 }
